@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>변수 4</title>
+  </head>
+  <body>
+    
+    <script>
+      let now = new Date(); //새로 내장 개체가 잇음 현재 월 / 일 / 년/ 시간 이 나올거임
+      let display = now.toLocaleDateString();//00.toLocaleDateString(); 을해야 년 월 일
+     // let display = now.toTimeString();
+     let displayTime = now.toLocaleTimeString(); 
+      console.log(display);
+    
+      document.write(`<p>오늘 날짜는 ${now}</p>`)
+    document.write(`<p>오늘 날짜는 ${display}</p>`)
+   document.write(`<p>오늘 시간은 ${displayTime}</p>`)
+   document.write(`<,오늘>오늘 날짜는 ${display} ,오늘 시간은 ${displayTime}</p>`)
+    </script>
+  </body>
+</html>

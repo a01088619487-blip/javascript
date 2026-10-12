@@ -2,10 +2,34 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=], initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>변수 1</title>
 </head>
 <body>
+
+    <script>
+        //변수 공부
+        // 변수 예약어를 바꾸는걸 할수잇다 하지만 "var"라는 용어는 요즘 안씀 "const" 랑.."let" 쓰이고 const가 가장 안전함 
+        // 변수 : 데이터를 담는 상자
+        // 변수 선언과 할당이 있다
+        let name ="김다운" //
+        console.log(name);
+        //let 재할당이 가능함 
+        name ="홍길동"  // name 변수에 재할당
+        console.log(name);
+        //let name ="김다운"
+        //console.log(age);
+       // const age = 40
+        // let 재할당 가능 하지만 같은 변수명은 못한다? <<
+        const age = 20
+        //age = 30 const는 재할당이 불가능함 그래서 재할당 처럼 넣으면 오류가 뜬다. 잇는 그대로 써야함
+        console.log(age);
+        let userName = prompt("이름을 입력하세요", "ㅇㅇㅇ")
+        console.log(userName);
+        document.write(`<h1>이름 : ${userName} </h1>
+        <p>나이 : ${age} </p>`);
+
+    </script>
     
 </body>
 </html>
